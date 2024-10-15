@@ -2,6 +2,7 @@ import tkinter as tk
 
 def ChangeLabel():
 	label.config(text = entry.get())
+	entry.delete(0, len(entry.get()))
 
 window = tk.Tk()
 label = tk.Label(window, text = "Hello!")
